@@ -1,13 +1,12 @@
-'''
-shell sort: enhanced version of insert. it does quite well for certain circumstances in this example we use doug shell sort
-
-http://www.stoimen.com/blog/2012/02/27/computer-algorithms-shell-sort/
-
-
-input list should be the same type: int, float, double, long etc
-''' 
-
 def shell_sort(datalist):
+    '''
+    shell sort: enhanced version of insert. it does quite well for certain circumstances in this example we use doug shell sort
+
+    http://www.stoimen.com/blog/2012/02/27/computer-algorithms-shell-sort/
+
+
+    input list should be the same type: int, float, double, long etc
+    '''
     gap = len(datalist)/2
     while gap>0:
         for i in range(gap,len(datalist)):
